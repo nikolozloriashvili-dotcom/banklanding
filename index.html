@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ნოვა ბანკი | მომავლის ციფრული ბანკინგი</title>
+  <meta name="description" content="ნოვა ბანკი — თანამედროვე, სრულად ციფრული ბანკი. მყისიერი გადარიცხვები, უმაღლესი უსაფრთხოება და ჭკვიანი დანაზოგები.">
+  
+  <!-- Google Fonts: Noto Sans Georgian & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Elements -->
+  <div class="ambient-sphere ambient-sphere-1" aria-hidden="true"></div>
+  <div class="ambient-sphere ambient-sphere-2" aria-hidden="true"></div>
+  <div class="ambient-sphere ambient-sphere-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo" aria-label="ნოვა ბანკის მთავარი გვერდი">
+        <div class="logo-icon">
+          <!-- Nova Geometric Star / Shield SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <span class="logo-text">ნოვა ბანკი</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu-wrapper" aria-label="მთავარი ნავიგაცია">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">მთავარი</a></li>
+          <li><a href="#about" class="nav-link">ჩვენ შესახებ</a></li>
+          <li><a href="#features" class="nav-link">უპირატესობები</a></li>
+          <li><a href="#contact" class="nav-link">კონტაქტი</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm" id="navCtaBtn">ინტერნეტ ბანკი</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="მენიუს გახსნა/დახურვა" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main>
+
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="hero-section" id="hero" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text & CTA -->
+          <div class="hero-content">
+            <div class="badge-pill">
+              <span class="badge-dot"></span>
+              <span>ციფრული ბანკინგის ახალი ერა</span>
+            </div>
+
+            <h1 class="hero-title" id="heroTitle">
+              მართე შენი ფინანსები <span class="gradient-text">ჭკვიანურად</span> და მარტივად
+            </h1>
+
+            <p class="hero-description">
+              ნოვა ბანკი აერთიანებს თანამედროვე ტექნოლოგიებს, მაღალ უსაფრთხოებასა და 0%-იან საკომისიოებს ყოველდღიურ გადარიცხვებზე. გახსენი უფასო ციფრული ანგარიში სულ რაღაც 2 წუთში.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn btn-primary" id="heroPrimaryCta">
+                <span>გახსენი ანგარიში</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#about" class="btn btn-secondary" id="heroSecondaryCta">
+                <span>გაიგე მეტი</span>
+              </a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="stat-number">250K+</span>
+                <span class="stat-label">აქტიური მომხმარებელი</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">99.9%</span>
+                <span class="stat-label">დაცული სისტემა</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">0 ₾</span>
+                <span class="stat-label">ანგარიშის მომსახურება</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: 3D Interactive Bank Card & Floating Pills -->
+          <div class="hero-visual-wrapper">
+            <div class="card-scene" id="cardScene">
+              
+              <!-- Floating Notification Pill 1 -->
+              <div class="floating-pill floating-pill-1" aria-hidden="true">
+                <div class="pill-icon green">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="pill-content">
+                  <span class="pill-title">მყისიერი გადარიცხვა</span>
+                  <span class="pill-amount">+ ₾ 1,850.00</span>
+                </div>
+              </div>
+
+              <!-- Nova Platinum 3D Bank Card -->
+              <div class="bank-card" id="interactiveCard">
+                <div class="bank-card-top">
+                  <div class="card-chip-group">
+                    <div class="emv-chip"></div>
+                    <svg class="contactless-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="უკონტაქტო გადახდა">
+                      <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                      <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                    </svg>
+                  </div>
+                  <span class="card-brand-name">NOVA PLATINUM</span>
+                </div>
+
+                <div class="card-number">
+                  4829 •••• •••• 9102
+                </div>
+
+                <div class="bank-card-bottom">
+                  <div>
+                    <div class="card-holder-title">ბარათის მფლობელი</div>
+                    <div class="card-holder-name">ალექსანდრე ბერიძე</div>
+                  </div>
+                  <div class="card-expiry">
+                    <div class="card-holder-title">ვადა</div>
+                    <div class="card-expiry-val">09/29</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Notification Pill 2 -->
+              <div class="floating-pill floating-pill-2" aria-hidden="true">
+                <div class="pill-icon blue">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <div class="pill-content">
+                  <span class="pill-title">ქეშბექი დარიცხულია</span>
+                  <span class="pill-amount">+ ₾ 74.20</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section class="section-padding" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="text-center">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>ჩვენ შესახებ</span>
+          </div>
+          <h2 class="section-title" id="aboutTitle">ბანკი, რომელიც შექმნილია თქვენი თავისუფლებისთვის</h2>
+          <p class="section-subtitle">
+            ნოვა ბანკი არის სრულად ციფრული ფინანსური ეკოსისტემა. ჩვენ გავაუქმეთ გრძელი რიგები, დამღლელი ბიუროკრატია და გაუგებარი ტარიფები.
+          </p>
+        </div>
+
+        <div class="about-card-banner">
+          <div class="about-grid">
+            <div class="about-text-col">
+              <h3 class="about-col-title">
+                ფინანსური სერვისები ყოველგვარი საზღვრების გარეშე
+              </h3>
+              <p class="about-desc">
+                ჩვენი მიზანია შევქმნათ უმარტივესი და ყველაზე საიმედო საბანკო გამოცდილება საქართველოში. ერთი მობილური აპლიკაციით თქვენ იღებთ სრულ წვდომას გლობალურ ანგარიშებზე, ინვესტიციებზე და მყისიერ გადარიცხვებზე მსოფლიოს ნებისმიერ წერტილში.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <div class="check-icon">✓</div>
+                  <div>
+                    <strong class="highlight-strong">100% ციფრული გამოცდილება:</strong> ფილიალში მისვლა აღარასდროს დაგჭირდებათ.
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="check-icon">✓</div>
+                  <div>
+                    <strong class="highlight-strong">გამჭვირვალე პირობები:</strong> არანაირი ფარული გადასახადი და გაუთვალისწინებელი ხარჯი.
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="check-icon">✓</div>
+                  <div>
+                    <strong class="highlight-strong">24/7 მხარდაჭერა:</strong> პროფესიონალთა გუნდი და ჭკვიანი ასისტენტი მუდმივ მზადყოფნაში.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metric Box Stats -->
+            <div class="about-stats-grid">
+              <div class="stat-box">
+                <div class="stat-box-val gradient-text">2 წუთი</div>
+                <div class="stat-box-desc">სჭირდება ანგარიშის სრულად გახსნას</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-box-val gradient-text">10.5%</div>
+                <div class="stat-box-desc">მაღალი წლიური სარგებელი დანაზოგზე</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-box-val gradient-text">0.0 წმ</div>
+                <div class="stat-box-desc">მყისიერი გადარიცხვა ნოვა ბარათებს შორის</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-box-val gradient-text">4.9 ★</div>
+                <div class="stat-box-desc">მომხმარებელთა კმაყოფილების რეიტინგი</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. FEATURES SECTION (3 CARDS) ==================== -->
+    <section class="section-padding" id="features" aria-labelledby="featuresTitle">
+      <div class="container">
+        <div class="text-center">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>უპირატესობები</span>
+          </div>
+          <h2 class="section-title" id="featuresTitle">რატომ ირჩევენ <span class="gradient-text">ნოვა ბანკს</span>?</h2>
+          <p class="section-subtitle">
+            აღმოაჩინეთ უახლესი ფინანსური ინსტრუმენტები, რომლებიც შექმნილია თქვენი დროისა და თანხის დასაზოგად.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Feature Card 1: Fast Transfers -->
+          <article class="feature-card" id="featureCard1">
+            <div class="feature-icon-wrapper icon-bg-blue">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">მყისიერი გადარიცხვები 0% საკომისიოთი</h3>
+            <p class="feature-card-desc">
+              გადარიცხეთ თანხა წამებში ნებისმიერ ადგილობრივ თუ საერთაშორისო ანგარიშზე. დაივიწყეთ დაყოვნებები — თქვენი ფინანსები მოძრაობს რეალურ დროში.
+            </p>
+            <div class="feature-tags">
+              <span class="feature-tag-item">⚡ წამიერი P2P</span>
+              <span class="feature-tag-item">🌍 IBAN მხარდაჭერა</span>
+              <span class="feature-tag-item">0% საკომისიო</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 2: Security & Protection -->
+          <article class="feature-card" id="featureCard2">
+            <div class="feature-icon-wrapper icon-bg-purple">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">მაღალი დონის კიბერუსაფრთხოება</h3>
+            <p class="feature-card-desc">
+              თქვენი თანხები დაცულია 256-bit დაშიფვრით, ხელოვნური ინტელექტით მართული ანტი-თაღლითური სისტემითა და ერთჯერადი ვირტუალური ბარათებით.
+            </p>
+            <div class="feature-tags">
+              <span class="feature-tag-item">🛡️ 256-bit დაშიფვრა</span>
+              <span class="feature-tag-item">🤖 AI მონიტორინგი</span>
+              <span class="feature-tag-item">🔒 ბიომეტრია</span>
+            </div>
+          </article>
+
+          <!-- Feature Card 3: Smart Savings & Cashback -->
+          <article class="feature-card" id="featureCard3">
+            <div class="feature-icon-wrapper icon-bg-cyan">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m16 12-4-4-4 4"></path>
+                <path d="M12 16V8"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">ჭკვიანი დანაზოგი და ქეშბექი</h3>
+            <p class="feature-card-desc">
+              დააგროვეთ თანხა ყოველდღიური შენაძენების ავტომატური დამრგვალებით, მიიღეთ 10.5%-მდე წლიური სარგებელი და ისარგებლეთ ექსკლუზიური ქეშბექით.
+            </p>
+            <div class="feature-tags">
+              <span class="feature-tag-item">💰 10.5% სარგებელი</span>
+              <span class="feature-tag-item">🎁 30%-მდე ქეშბექი</span>
+              <span class="feature-tag-item">🎯 ჭკვიანი მიზნები</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. CONTACT SECTION ==================== -->
+    <section class="section-padding" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="text-center">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>კონტაქტი</span>
+          </div>
+          <h2 class="section-title" id="contactTitle">დაგვიკავშირდით <span class="gradient-text">ნებისმიერ დროს</span></h2>
+          <p class="section-subtitle">
+            გაქვთ კითხვები ან გსურთ ინდივიდუალური კონსულტაცია? ჩვენი გუნდი მზადაა დაგეხმაროთ 24/7 რეჟიმში.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-panel">
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">ტელეფონის ნომერი (ცხელი ხაზი)</div>
+                <a href="tel:+995322000000" class="contact-card-value">+995 (32) 2 00 00 00</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">ელექტრონული ფოსტა</div>
+                <a href="mailto:support@novabank.ge" class="contact-card-value">support@novabank.ge</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">სათაო ოფისი</div>
+                <div class="contact-card-value address-val">ჭავჭავაძის გამზ. 74, თბილისი, საქართველო</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">სამუშაო საათები</div>
+                <div class="contact-card-value">24/7 უწყვეტი ონლაინ მხარდაჭერა</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Interactive Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="form-heading">
+              გამოგვიგზავნეთ შეტყობინება
+            </h3>
+
+            <!-- Alert message boxes -->
+            <div class="form-alert success" id="formSuccessAlert" role="alert">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>გმადლობთ! თქვენი შეტყობინება წარმატებით გაიგზავნა. ჩვენი ოპერატორი მალე დაგიკავშირდებათ.</span>
+            </div>
+
+            <div class="form-alert error" id="formErrorAlert" role="alert">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span id="errorMessageText">გთხოვთ შეავსოთ ყველა აუცილებელი ველი სწორად.</span>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName" class="form-label">სრული სახელი *</label>
+                  <input type="text" id="userName" name="userName" class="form-input" placeholder="მაგ: გიორგი მაისურაძე" required>
+                </div>
+                <div class="form-group">
+                  <label for="userPhone" class="form-label">ტელეფონის ნომერი *</label>
+                  <input type="tel" id="userPhone" name="userPhone" class="form-input" placeholder="599 00 00 00" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userEmail" class="form-label">ელექტრონული ფოსტა *</label>
+                  <input type="email" id="userEmail" name="userEmail" class="form-input" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="subjectSelect" class="form-label">თემა</label>
+                  <select id="subjectSelect" name="subjectSelect" class="form-select">
+                    <option value="account">ანგარიშის გახსნა</option>
+                    <option value="card">პრემიუმ ბარათები</option>
+                    <option value="business">ბიზნეს ბანკინგი</option>
+                    <option value="support">ტექნიკური მხარდაჭერა</option>
+                    <option value="other">სხვა კითხვა</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">თქვენი შეტყობინება *</label>
+                <textarea id="userMessage" name="userMessage" class="form-textarea" placeholder="დაწერეთ თქვენი შეკითხვა დეტალურად..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="contactSubmitBtn">
+                <span id="btnText">შეტყობინების გაგზავნა</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span class="logo-text">ნოვა ბანკი</span>
+          </a>
+          <p class="footer-desc">
+            თანამედროვე ციფრული ფინანსური პლატფორმა, რომელიც გაძლევთ სრულ თავისუფლებას თქვენი კაპიტალის მართვაში.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">ნავიგაცია</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">მთავარი გვერდი</a></li>
+            <li><a href="#about" class="footer-link">ჩვენ შესახებ</a></li>
+            <li><a href="#features" class="footer-link">უპირატესობები</a></li>
+            <li><a href="#contact" class="footer-link">კონტაქტი</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">პროდუქტები</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">ციფრული ანგარიში</a></li>
+            <li><a href="#features" class="footer-link">ნოვა პლატინუმ ბარათი</a></li>
+            <li><a href="#features" class="footer-link">ჭკვიანი ყულაბა</a></li>
+            <li><a href="#features" class="footer-link">ბიზნეს გადაწყვეტილებები</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">უსაფრთხოება</h4>
+          <ul class="footer-links">
+            <li><a href="#contact" class="footer-link">დეპოზიტების დაზღვევა</a></li>
+            <li><a href="#contact" class="footer-link">მონაცემთა დაცვა</a></li>
+            <li><a href="#contact" class="footer-link">საბანკო ლიცენზია</a></li>
+            <li><a href="#contact" class="footer-link">უსაფრთხოების რჩევები</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 სს „ნოვა ბანკი საქართველო“. ყველა უფლება დაცულია.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#contact" class="footer-bottom-link">კონფიდენციალურობა</a>
+          <a href="#contact" class="footer-bottom-link">წესები და პირობები</a>
+          <a href="#contact" class="footer-bottom-link">უსაფრთხოება</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="გვერდის თავში დაბრუნება">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- External JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
